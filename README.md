@@ -2,7 +2,7 @@
 
 A sleek and modern Chrome extension that displays real-time weather data using the **OpenWeather API**, wrapped in a beautiful **glassmorphism UI**.
 
-![Preview](./preview.png)
+![Preview](./preview.jpeg)
 
 ---
 
