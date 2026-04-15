@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Glass Weather</title>
+
+  <!-- Tailwind -->
+  <link rel="stylesheet" href="tailwind.css">
+
+
+  <!-- Weather Icons -->
+<link rel="stylesheet" href="weather-icons/css/weather-icons.min.css">
+
+
+  <style>
+    body {
+      width: 380px;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-blue-200 to-purple-200 font-sans p-4">
+
+  <div class="backdrop-blur-2xl bg-white/20 border border-white/30 rounded-3xl p-6 shadow-2xl">
+
+    <!-- Search -->
+    <div class="mb-4 text-center">
+      <input
+        type="text"
+        id="searchCity"
+        placeholder="Enter city name..."
+        class="w-full px-4 py-2 rounded-xl bg-white/40 backdrop-blur-md border border-white/30 placeholder-gray-700 text-gray-800 focus:outline-none focus:ring-2 focus:ring-purple-400 transition"
+      />
+    </div>
+
+    <!-- Location + Date -->
+    <div class="text-center mb-4">
+      <h2 class="text-2xl font-bold" id="location">City Name</h2>
+      <p class="text-gray-700 text-sm" id="date_time"></p>
+      <p class="text-gray-600 mt-1 italic text-sm" id="condition_des"></p>
+    </div>
+
+    <!-- Main Weather -->
+    <div class="flex items-center justify-between mb-4">
+      <div class="text-6xl text-yellow-400" id="icon">
+        <i class="wi wi-day-sunny"></i>
+      </div>
+      <div class="text-4xl font-bold" id="temp">25°C</div>
+    </div>
+
+    <!-- Info Grid -->
+    <div class="grid grid-cols-2 gap-3 text-gray-800 text-sm">
+      <div class="bg-white/20 rounded-xl p-3 text-center">
+        <p>Feels Like</p>
+        <p id="feels_like" class="font-semibold"></p>
+      </div>
+      <div class="bg-white/20 rounded-xl p-3 text-center">
+        <p>Humidity</p>
+        <p id="humidity" class="font-semibold"></p>
+      </div>
+      <div class="bg-white/20 rounded-xl p-3 text-center">
+        <p>Wind</p>
+        <p id="wind" class="font-semibold"></p>
+      </div>
+      <div class="bg-white/20 rounded-xl p-3 text-center">
+        <p>Visibility</p>
+        <p id="visibility" class="font-semibold"></p>
+      </div>
+      <div class="bg-white/20 rounded-xl p-3 text-center">
+        <p>Max Temp</p>
+        <p id="max_temp" class="font-semibold"></p>
+      </div>
+      <div class="bg-white/20 rounded-xl p-3 text-center">
+        <p>Min Temp</p>
+        <p id="min_temp" class="font-semibold"></p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

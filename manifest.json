@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Glass Weather Dashboard",
+  "description": "A glassmorphism weather dashboard",
+  "version": "1.1",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Weather"
+  },
+  "icons": {
+    "128": "icon128.png"
+  },
+  "permissions": ["geolocation"]
+}
